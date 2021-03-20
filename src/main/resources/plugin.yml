@@ -1,8 +1,8 @@
 name: StaffDynmap
 version: ${project.version}
 main: com.crusadecraft.staffdynmap.StaffDynmap
-api-version: 1.16
-depend: [ Dynmap ]
+api-version: 1.13
+depend: [ dynmap ]
 authors: [ V1nc3ntWasTaken ]
 description: A plugin that keeps staff hidden while staffing
 website: https://crusade-craft.com
