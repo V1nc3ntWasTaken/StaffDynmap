@@ -6,7 +6,7 @@
 
     <groupId>com.crusadecraft</groupId>
     <artifactId>StaffDynmap</artifactId>
-    <version>0.1</version>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
     <name>StaffDynmap</name>
