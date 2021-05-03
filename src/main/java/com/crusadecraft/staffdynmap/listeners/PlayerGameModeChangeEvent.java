@@ -7,14 +7,10 @@ import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.scheduler.BukkitTask;
 
 public class PlayerGameModeChangeEvent implements Listener {
 
-    private static StaffDynmap plugin;
-
     public PlayerGameModeChangeEvent(StaffDynmap plugin) {
-        this.plugin = plugin;
         Bukkit.getPluginManager().registerEvents(this, plugin);
     }
 
@@ -27,7 +23,7 @@ public class PlayerGameModeChangeEvent implements Listener {
 
         if ((event.getNewGameMode() == GameMode.CREATIVE) || (event.getNewGameMode() == GameMode.SPECTATOR)) {
             Bukkit.dispatchCommand(console, commandHide);
-        } else if (event.getNewGameMode() == GameMode.SURVIVAL) {
+        } else if ((event.getNewGameMode() == GameMode.SURVIVAL) || (event.getNewGameMode() == GameMode.ADVENTURE)) {
             Bukkit.dispatchCommand(console, commandShow);
         }
 
